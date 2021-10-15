@@ -8,7 +8,7 @@ async function shorterer(req, res, next) {
     const longUrl = req.body.url;
     const response = await bitly.shorten(longUrl);
     const shortUrl = response.link;
-    res.sendStatus(200).send(shortUrl);
+    res.send(shortUrl);
   } catch (err) {
     res.sendStatus(400);
   }
