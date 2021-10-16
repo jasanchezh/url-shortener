@@ -18,6 +18,9 @@ async function shorterer(req, res, next) {
 router.get("/", (req, res, next) => {
   res.redirect("/shorter");
 });
+router.get("/test", (req, res, next) => {
+  res.send("Hola");
+});
 router.post("/shorter", (req, res, next) => {
   shorterer(req, res, next);
 });
