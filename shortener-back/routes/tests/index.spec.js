@@ -9,7 +9,7 @@ describe("GET /test", () => {
   it("Gets the test endpoint", async () => {
     const response = await request.get("/test");
     expect(response.status).toBe(200);
-    expect(response.text).toBe("Hola");
+    expect(response.text).toBe("Testing");
   });
 });
 describe("POST /shorter", () => {

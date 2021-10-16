@@ -18,8 +18,9 @@ async function shorterer(req, res, next) {
 router.get("/", (req, res, next) => {
   res.redirect("/shorter");
 });
+// TODO: Endpoint test, delete it in the future
 router.get("/test", (req, res, next) => {
-  res.send("Hola");
+  res.send("Testing");
 });
 router.post("/shorter", (req, res, next) => {
   shorterer(req, res, next);
